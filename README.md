@@ -5,7 +5,15 @@
 ```sh
 meta-bootlinlabs
 ├── conf
-│   └── layer.conf
+│   ├── distro
+│   │   ├── bblayers.conf.sample
+│   │   ├── include
+│   │   │   └── tcmode-default.inc
+│   │   ├── local.conf.sample
+│   │   └── yocty.conf
+│   ├── layer.conf
+│   └── machine
+│       └── bootlinlabs.conf
 ├── COPYING.MIT
 ├── day1.md
 ├── day2.md
@@ -22,6 +30,7 @@ meta-bootlinlabs
 │                       └── joystick-support.patch
 ├── recipes-core
 │   └── images
+│       ├── bootlin-image.bb
 │       └── core-image-minimal.bbappend
 ├── recipes-example
 │   └── example
@@ -37,7 +46,6 @@ meta-bootlinlabs
                         ├── 0002-ARM-dts-stm32mp157a-dk1-add-description-of-Nunchuk-o.patch
                         ├── 0003-ARM-dts-stm32mp157d-dk1-add-description-of-Nunchuk-o.patch
                         └── defconfig
-
 ```
 
 ### Test nunchuk joystick
