@@ -30,7 +30,7 @@ OR
 ```sh
 bitbake -e ninvaders | grep "^D="
 ```
-
+Location of ${D} and ${S} 
 ```sh
 D="tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/ninvaders/0.1.1/image"
 S="tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/ninvaders/0.1.1/git"

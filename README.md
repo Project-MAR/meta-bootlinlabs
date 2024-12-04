@@ -39,3 +39,8 @@ meta-bootlinlabs
                         └── defconfig
 
 ```
+
+### Test nunchuk joystick
+```sh
+od -x /dev/input/js0
+```
